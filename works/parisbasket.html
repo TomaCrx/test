@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>Thomas Conroix</title>
+<link rel="stylesheet" href="../dist/master.css">
+<script src="../dist/jquery-3.5.1.min.js"></script>
+<script src="../dist/moment.js"></script>
+<script>
+		if (window.matchMedia("(min-width: 768px)").matches) {
+	 	
+	 	function update() {
+			$('.clock').html(moment().format('ddd DD.MM  H:mm:ss'));
+		}
+		setInterval(update, 1);
+
+		} /*end if*/
+
+		else {
+	  	
+	  	function update() {
+			$('.clock').html(moment().format('ddd. DD MMM'));
+		}
+		setInterval(update, 100);
+
+		} /*end else*/
+		
+	</script>
+<link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="folio-hdr">
+<div class="hdr-ctn">
+<div class="hdr-itm"></div>
+<div class="hdr-itm"><span><a class="close" href="../works.html">✕ Close</a></span></div>
+<div class="hdr-itm"></div>
+</div> <!-- hdr-ctn -->
+</header>
+
+
+<section class="folio">
+
+<div class="folio-ctn">
+
+<div class="folio-infos">
+
+	<div class="folio-infos-itm"><em>2021</em></div>
+
+	<div class="folio-infos-itm"><h1 class="title">Paris Basketball</h1>
+	<em>Project title</em></div>
+
+	<div class="folio-infos-itm"><h2 class="client">Yard Agency</h2>
+	<em>Client</em></div>
+
+	<div class="folio-infos-itm"><p class="category">Motion design</p>
+	<em>Category</em></div>
+
+	<div class="swiper-pagination"></div>
+</div>
+
+<div class="folio-swiper">
+	<div class="swiper-container swiper-folio">
+		<div class="swiper-wrapper">
+
+			<div class="swiper-slide">
+				<img src="../img/pb-01.jpg" alt="">
+			</div>
+
+			<div class="swiper-slide">
+				<video autoplay muted height="auto" width="auto" loop>
+					<source src="../img/pb-02.mp4" type="video/mp4">
+				</video>
+			</div>
+
+			<div class="swiper-slide">
+				<video autoplay muted height="auto" width="auto" loop>
+					<source src="../img/pb-04.mp4" type="video/mp4">
+				</video>
+			</div>
+
+			<div class="swiper-slide">
+				<video autoplay muted height="auto" width="auto" loop>
+					<source src="../img/pb-03.mp4" type="video/mp4">
+				</video>
+			</div>
+
+			<div class="swiper-slide">
+				<img src="../img/pb-07.jpg" alt="">
+			</div>
+
+			<div class="swiper-slide">
+				<video autoplay muted height="auto" width="auto" loop>
+					<source src="../img/pb-05.mp4" type="video/mp4">
+			</video>
+			</div>
+		</div> <!-- swiper-wrapper -->
+	</div> <!-- swiper-container -->
+</div> <!-- folio-swiper -->
+
+
+
+<div class="folio-details">
+	<p>Motions graphics made for <a href="https://parisbasketball.paris/" target="blank">Paris Basketball</a> club's communication, matchs and events. Created under the direction of <a href="https://yard.agency/en" target="blank">Yard Agency</a>.</p>
+</div>
+	
+</div> <!-- folio-ctn -->
+
+</section>
+
+<footer class="folio-ftr">
+<div class="ftr-ctn">
+<div class="ftr-itm">
+	<a href="halloween.html"><span>Prev project</span></a>
+</div>
+<div class="ftr-itm"><span></span></div>
+<div class="ftr-itm">
+	<a href="konsum.html"><span>Next project</span></a>
+</div>
+</div> <!-- ftr-ctn -->
+</footer>
+
+<script src="../dist/script.js"></script>
+<script src="../dist/swiper-bundle.min.js"></script>
+<script>
+	if (window.matchMedia("(min-width: 768px)").matches) {
+	 	
+	 	var swiper = new Swiper('.swiper-folio', {
+			mousewheel: true,
+			effect: 'fade',
+			fadeEffect: {
+			    crossFade: true
+			  },
+			loop: true,
+			slidesPerView: 1,
+			spaceBetween: 1,
+			pagination: {
+			el: '.swiper-pagination',
+			type: 'fraction',
+			},
+		});
+
+		} /*end if*/
+
+		else {
+	  	
+	  	var swiper = new Swiper('.swiper-folio', {
+	  		direction: 'vertical',
+	  		effect: 'fade',
+			fadeEffect: {
+			    crossFade: true
+			  },
+			loop: true,
+			slidesPerView: 1,
+			pagination: {
+			el: '.swiper-pagination',
+			type: 'fraction',
+			},
+		});
+
+		} /*end else*/
+</script>
+
+</body>
+</html>

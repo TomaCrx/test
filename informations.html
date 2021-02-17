@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>INFOS - Thomas Conroix</title>
+<link rel="stylesheet" href="dist/master.css">
+<script src="dist/jquery-3.5.1.min.js"></script>
+<script src="dist/moment.js"></script>
+<script>
+		if (window.matchMedia("(min-width: 768px)").matches) {
+	 	
+	 	function update() {
+			$('.clock').html(moment().format('ddd DD.MM  H:mm:ss'));
+		}
+		setInterval(update, 1);
+
+		} /*end if*/
+
+		else {
+	  	
+	  	function update() {
+			$('.clock').html(moment().format('ddd. DD MMM'));
+		}
+		setInterval(update, 100);
+
+		} /*end else*/
+		
+	</script>
+<link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+<div class="hdr-ctn">
+<div class="hdr-itm activ"><span class="btn-infos"><a href="informations.html">Infos</a></span></div>
+<div class="hdr-itm"><h1><a href="index.html">Thomas Conroix</a></h1></div>
+<div class="hdr-itm"><span class="btn-works"><a href="works.html">Works</a></span></div>
+</div> <!-- hdr-ctn -->
+</header>
+
+<section class="infos">
+<div class="infos-ctn">
+<div class="bio">
+	<p>I am a multidisciplinary creative designer, conceptual thinker and consultacy practice, solving communication problems through the use of typography, space, image & color. My practice is specialized in visual driven projects oriented towards brands, spaces, print & digital with the aim of sparking meaningful experiences. Mediums and tools are meticulously chosen in specific context defined by each project, favoring on strong, singular, sensitive and pragmatic solutions. I'm based in Paris and currently intern at <a href="https://yard.agency/en" target="blank">Yard Agency</a> as AD Assistant.</p>
+</div> <!-- bio -->
+
+<div class="contact infos-itm">
+					
+<div class="contact-ctn">
+
+	<div class="ctc-itm">
+		<span>M</span>
+		<a href="mailto:crxthomas@gmail.com">tom@conroix.com</a>
+	</div>
+
+	<div class="ctc-itm">
+		<span>IG</span>
+		<a href="https://www.instagram.com/thomas.conroix/" target="blank">@thomas.conroix</a>
+	</div>
+</div>
+					
+</div> <!-- contact -->
+
+<div class="social infos-itm">
+<!-- <div class="infos-itm-title">
+<p>Social</p>
+</div> -->
+<ul class="social-ctn">
+<li><a href="https://www.instagram.com/thomas.conroix/" target="blank">Instagram</a></li>
+<li><a href="https://www.behance.net/crxthomas" target="blank">Behance</a></li>
+<li><a href="https://www.linkedin.com/in/crxthomas/" target="blank">Linkedin</a></li>
+<li><a href="https://www.malt.fr/profile/thomasconroix" target="blank">Malt</a></li>
+</ul>
+</div> <!-- social -->
+
+<div class="services infos-itm">
+<div class="infos-itm-title">
+	<p>Services</p>
+</div>
+<ul class="services-ctn">
+	<li>Art direction</li>
+	<li>Webdesign</li>
+	<li>Graphic design</li>
+	<li>Typography</li>
+	<li>Editorial design</li>
+	<li>Motion design</li>
+	<li>Visual identity</li>
+	<li>Video</li>
+	<li>Scenography</li>
+	<li>Photography</li>
+</ul>	
+</div> <!-- services -->
+
+<div class="education infos-itm">
+
+	<div class="infos-itm-title">
+		<p>Education & Experiences</p>
+	</div>
+
+	<div class="edc-ctn">
+		<div class="ed-itm">			
+			<span class="ed-place">Yard</span>
+			<span class="ed-diploma">Art Director assistant</span>
+			<span class="ed-option">Internship</span>
+			<span class="ed-date">2021 — 2020</span>
+		</div>
+		<div class="ed-itm">			
+			<span class="ed-place">HEAR</span>
+			<span class="ed-diploma">DNA</span>
+			<span class="ed-option">Visual communication</span>
+			<span class="ed-date">2020 — 2019</span>
+		</div>
+		<div class="ed-itm">	
+			<span class="ed-place">Wastedparis</span>
+			<span class="ed-diploma">Graphic designer</span>
+			<span class="ed-option">Internship</span>
+			<span class="ed-date">2018</span>
+		</div>
+
+		<div class="ed-itm">
+			<span class="ed-place">J. Prévert</span>
+			<span class="ed-diploma">BTS</span>
+			<span class="ed-option">Graphic design & digital medias</span>
+			<span class="ed-date">2019 — 2017</span>
+		</div>
+
+		<div class="ed-itm">
+			<span class="ed-place">R. Loewy</span>
+			<span class="ed-diploma">Baccalauréat</span>
+			<span class="ed-option">Design & applied arts</span>
+			<span class="ed-date">2017 — 2014</span>
+		</div>
+	</div> <!-- edc -->
+</div> <!-- education -->
+
+<div class="legal infos-itm">
+	<p>This website and its contents are the property of Thomas Conroix unless otherwise stated. Thomas Conroix © 2020. All rights reserved.</p>
+</div> <!-- legal -->
+
+<div class="credits infos-itm">
+<p>Design and code by Thomas Conroix. Swiper by iDangerous.</p>
+</div> <!-- infos-ctn -->
+
+</section>
+
+<footer>
+<div class="ftr-ctn">
+<div class="ftr-itm"><span>Updated 04.12</span></div>
+<div class="ftr-itm"><span>T C</span></div>
+<div class="ftr-itm"><span class="clock"></span></div>
+</div> <!-- ftr-ctn -->
+</footer>
+<script src="dist/script.js"></script>
+</body>
+</html>
