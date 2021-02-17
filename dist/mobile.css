@@ -263,9 +263,6 @@ section{
 
 
 .folio{
-	display: grid;
-	grid-template-columns: 100%;
-	align-items: center;
 }
 
 .folio-hdr a,
@@ -275,7 +272,11 @@ section{
 
 
 .folio-ctn{
-	/*background-color: pink;*/
+	margin-top: 5vh;
+	height: 90vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
 }
 
 .folio-infos,
