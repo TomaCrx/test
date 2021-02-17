@@ -329,7 +329,7 @@ section{
 }
 
 .folio-ctn{
-	/*background-color: pink;*/
+	width: 100%;
 }
 
 .folio a{
@@ -366,6 +366,7 @@ section{
 .folio-swiper-video{
 	position: relative;
 	height: 70vh;
+	width: auto;
 	padding: 10px;
 	background-color: gainsboro;
 
