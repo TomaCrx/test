@@ -307,7 +307,8 @@ width: 100%;
 .folio-swiper,
 .folio-swiper-video{
 	position: relative;
-	width: auto;
+	
+	width: calc(100% - 10px);
 	padding: 5px;
 	background-color: gainsboro;
 }
@@ -318,7 +319,7 @@ width: 100%;
 
 .folio-swiper,
 .swiper-folio{
-	height: 60vh;
+	height: calc(60vh - 10px);
 }
 .folio .swiper-slide{
 	height: auto;
